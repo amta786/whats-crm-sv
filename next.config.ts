@@ -101,7 +101,10 @@ const nextConfig: NextConfig = {
    * they apply to every response regardless of which cache rule
    * matched.
    */
-  async headers() {
+   allowedDevOrigins: [
+    'whats-crm-sv-production.up.railway.app'
+  ], 
+   async headers() {
     return [
       {
         source: "/api/:path*",
