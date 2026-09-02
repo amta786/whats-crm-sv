@@ -161,7 +161,7 @@ CREATE POLICY "Users can manage own conversations" ON conversations FOR ALL USIN
 -- MESSAGES
 -- ============================================================
 CREATE TABLE IF NOT EXISTS messages (
-  id UUID PRIMARY KEY DEFAULT gen_random_uuid(),
+  id UUID PRIMARY KEY DEFAULT uuid_generate_v4(),
   conversation_id UUID NOT NULL REFERENCES conversations(id) ON DELETE CASCADE,
   sender_type TEXT NOT NULL CHECK (sender_type IN ('customer', 'agent', 'bot')),
   sender_id UUID,
@@ -188,7 +188,7 @@ CREATE POLICY "Service role can insert messages" ON messages FOR INSERT WITH CHE
 -- WHATSAPP_CONFIG
 -- ============================================================
 CREATE TABLE IF NOT EXISTS whatsapp_config (
-  id UUID PRIMARY KEY DEFAULT (),
+  id UUID PRIMARY KEY DEFAULT uuid_generate_v4(),
   user_id UUID NOT NULL REFERENCES auth.users(id) ON DELETE CASCADE,
   phone_number_id TEXT NOT NULL,
   waba_id TEXT,
