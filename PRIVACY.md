@@ -173,11 +173,3 @@ rather than here. Details in
 ## License
 
 [MIT](./LICENSE). Fork it, brand it, host it.
-
----
-
-## 📋 Legal & Privacy
-
-- [Privacy Policy](https://whats-crm-sv-1.onrender.com/privacy)
-
-For questions about our privacy practices, please contact us at: privacy@whats-crm-sv-1.onrender.com

@@ -6,6 +6,8 @@
   "license": "MIT",
   "author": "Arnas Donauskas",
   "homepage": "https://github.com/ArnasDon/wacrm",
+  "privacy": "https://whats-crm-sv-1.onrender.com/privacy",
+  "homepage": "https://whats-crm-sv-1.onrender.com"
   "repository": {
     "type": "git",
     "url": "git+https://github.com/ArnasDon/wacrm.git"
